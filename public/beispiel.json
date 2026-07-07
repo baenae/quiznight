@@ -1,0 +1,105 @@
+{
+  "title": "Beispiel-Quiz",
+  "categories": [
+    {
+      "name": "Geographie",
+      "questions": [
+        {
+          "text": "Was ist die Hauptstadt von Australien?",
+          "answers": [
+            { "text": "Sydney", "correct": false },
+            { "text": "Canberra", "correct": true },
+            { "text": "Melbourne", "correct": false },
+            { "text": "Perth", "correct": false }
+          ]
+        },
+        {
+          "text": "Welcher Fluss ist der längste der Welt?",
+          "answers": [
+            { "text": "Amazonas", "correct": true },
+            { "text": "Nil", "correct": false },
+            { "text": "Jangtse", "correct": false },
+            { "text": "Mississippi", "correct": false }
+          ]
+        },
+        {
+          "text": "In welchem Land liegt der Mount Everest?",
+          "answers": [
+            { "text": "Indien", "correct": false },
+            { "text": "Nepal", "correct": true },
+            { "text": "China", "correct": false },
+            { "text": "Bhutan", "correct": false }
+          ]
+        },
+        {
+          "text": "Welches ist der kleinste Kontinent?",
+          "answers": [
+            { "text": "Europa", "correct": false },
+            { "text": "Australien", "correct": true },
+            { "text": "Antarktis", "correct": false },
+            { "text": "Südamerika", "correct": false }
+          ]
+        },
+        {
+          "text": "Welche Wüste ist die größte der Welt?",
+          "answers": [
+            { "text": "Sahara", "correct": false },
+            { "text": "Antarktische Wüste", "correct": true },
+            { "text": "Gobi", "correct": false },
+            { "text": "Kalahari", "correct": false }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Filme & Serien",
+      "questions": [
+        {
+          "text": "Wer spielt die Hauptrolle in \"Forrest Gump\"?",
+          "answers": [
+            { "text": "Tom Hanks", "correct": true },
+            { "text": "Tom Cruise", "correct": false },
+            { "text": "Brad Pitt", "correct": false },
+            { "text": "Kevin Costner", "correct": false }
+          ]
+        },
+        {
+          "text": "In welcher Stadt spielt die Serie \"Friends\"?",
+          "answers": [
+            { "text": "Boston", "correct": false },
+            { "text": "New York", "correct": true },
+            { "text": "Chicago", "correct": false },
+            { "text": "Los Angeles", "correct": false }
+          ]
+        },
+        {
+          "text": "Welche dieser Filme wurden von Christopher Nolan inszeniert? (mehrere richtig)",
+          "answers": [
+            { "text": "Inception", "correct": true },
+            { "text": "Interstellar", "correct": true },
+            { "text": "Gladiator", "correct": false },
+            { "text": "Titanic", "correct": false }
+          ]
+        },
+        {
+          "text": "Wie heißt der Zauberschüler in \"Harry Potter\"?",
+          "answers": [
+            { "text": "Ron Weasley", "correct": false },
+            { "text": "Harry Potter", "correct": true },
+            { "text": "Neville Longbottom", "correct": false },
+            { "text": "Draco Malfoy", "correct": false }
+          ]
+        },
+        {
+          "text": "Welches Studio produzierte \"Toy Story\"?",
+          "answers": [
+            { "text": "DreamWorks", "correct": false },
+            { "text": "Pixar", "correct": true },
+            { "text": "Illumination", "correct": false },
+            { "text": "Blue Sky Studios", "correct": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
