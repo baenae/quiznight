@@ -34,7 +34,7 @@ describe('validateQuiz', () => {
 
   it('accepts a special question with multiple correct answers', () => {
     const quiz = validQuiz(1)
-    quiz.categories[0].questions[0] = {
+    quiz.categories[0]!.questions[0]! = {
       text: 'Sonderfrage?',
       answers: [validAnswer(true), validAnswer(true), validAnswer(false), validAnswer(false)],
     }
@@ -44,7 +44,7 @@ describe('validateQuiz', () => {
 
   it('rejects a category without exactly 5 questions', () => {
     const quiz = validQuiz(1)
-    quiz.categories[0].questions.pop()
+    quiz.categories[0]!.questions.pop()
     const result = validateQuiz(quiz)
     expect(result).toEqual({
       ok: false,
@@ -54,7 +54,7 @@ describe('validateQuiz', () => {
 
   it('rejects a question without exactly 4 answers', () => {
     const quiz = validQuiz(1)
-    quiz.categories[0].questions[2].answers.pop()
+    quiz.categories[0]!.questions[2]!.answers.pop()
     const result = validateQuiz(quiz)
     expect(result).toEqual({
       ok: false,
@@ -64,7 +64,7 @@ describe('validateQuiz', () => {
 
   it('rejects a question with zero correct answers', () => {
     const quiz = validQuiz(1)
-    quiz.categories[0].questions[1].answers.forEach((answer) => {
+    quiz.categories[0]!.questions[1]!.answers.forEach((answer) => {
       answer.correct = false
     })
     const result = validateQuiz(quiz)
