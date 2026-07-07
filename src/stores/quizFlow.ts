@@ -32,7 +32,7 @@ export const useQuizFlowStore = defineStore('quizFlow', () => {
   }
 
   function next() {
-    currentIndex.value = Math.min(currentIndex.value + 1, steps.value.length - 1)
+    currentIndex.value = Math.min(currentIndex.value + 1, Math.max(steps.value.length - 1, 0))
   }
 
   function prev() {

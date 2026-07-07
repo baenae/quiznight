@@ -85,4 +85,10 @@ describe('useQuizFlowStore', () => {
     store.load(quiz)
     expect(store.loadError).toBeNull()
   })
+
+  it('does not go negative when calling next() before any quiz is loaded', () => {
+    const store = useQuizFlowStore()
+    store.next()
+    expect(store.currentIndex).toBe(0)
+  })
 })
