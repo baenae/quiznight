@@ -1,11 +1,11 @@
 <script setup lang="ts">
 defineProps<{
-  message: string
+	message: string
 }>()
 </script>
 
 <template>
-  <div>
-    <p>{{ message }}</p>
-  </div>
+	<div>
+		<p>{{ message }}</p>
+	</div>
 </template>

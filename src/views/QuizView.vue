@@ -14,36 +14,36 @@ const route = useRoute()
 const store = useQuizFlowStore()
 
 useQuizKeyboard(
-  () => store.next(),
-  () => store.prev(),
+	() => store.next(),
+	() => store.prev(),
 )
 
 const stepType = computed(() => store.currentStep?.type ?? null)
 const isResolved = computed(() => {
-  const step = store.currentStep
-  return step?.type === 'question' ? step.resolved : false
+	const step = store.currentStep
+	return step?.type === 'question' ? step.resolved : false
 })
 
 onMounted(async () => {
-  const fileName = typeof route.query.quiz === 'string' ? route.query.quiz : null
-  const result = await loadQuiz(fileName)
-  if (result.ok) {
-    store.load(result.quiz)
-  } else {
-    store.setError(result.message)
-  }
+	const fileName = typeof route.query.quiz === 'string' ? route.query.quiz : null
+	const result = await loadQuiz(fileName)
+	if (result.ok) {
+		store.load(result.quiz)
+	} else {
+		store.setError(result.message)
+	}
 })
 </script>
 
 <template>
-  <ErrorSlide v-if="store.loadError" :message="store.loadError" />
-  <CategorySlide v-else-if="stepType === 'category'" :name="store.currentCategory?.name ?? ''" />
-  <QuestionSlide
-    v-else-if="stepType === 'question'"
-    :text="store.currentQuestion?.text ?? ''"
-    :answers="store.currentQuestion?.answers ?? []"
-    :resolved="isResolved"
-  />
-  <PauseSlide v-else-if="stepType === 'pause'" />
-  <EndSlide v-else-if="stepType === 'end'" />
+	<ErrorSlide v-if="store.loadError" :message="store.loadError" />
+	<CategorySlide v-else-if="stepType === 'category'" :name="store.currentCategory?.name ?? ''" />
+	<QuestionSlide
+		v-else-if="stepType === 'question'"
+		:text="store.currentQuestion?.text ?? ''"
+		:answers="store.currentQuestion?.answers ?? []"
+		:resolved="isResolved"
+	/>
+	<PauseSlide v-else-if="stepType === 'pause'" />
+	<EndSlide v-else-if="stepType === 'end'" />
 </template>
