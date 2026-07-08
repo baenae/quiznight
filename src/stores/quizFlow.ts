@@ -4,56 +4,56 @@ import { buildSteps, type Step } from '@/quiz/buildSteps'
 import type { Quiz } from '@/quiz/types'
 
 export const useQuizFlowStore = defineStore('quizFlow', () => {
-  const quiz = ref<Quiz | null>(null)
-  const steps = ref<Step[]>([])
-  const currentIndex = ref(0)
-  const loadError = ref<string | null>(null)
+	const quiz = ref<Quiz | null>(null)
+	const steps = ref<Step[]>([])
+	const currentIndex = ref(0)
+	const loadError = ref<string | null>(null)
 
-  const currentStep = computed<Step | null>(() => steps.value[currentIndex.value] ?? null)
+	const currentStep = computed<Step | null>(() => steps.value[currentIndex.value] ?? null)
 
-  const currentCategory = computed(() => {
-    const step = currentStep.value
-    if (!step || !quiz.value) return null
-    if (step.type !== 'category' && step.type !== 'question') return null
-    return quiz.value.categories[step.categoryIndex] ?? null
-  })
+	const currentCategory = computed(() => {
+		const step = currentStep.value
+		if (!step || !quiz.value) return null
+		if (step.type !== 'category' && step.type !== 'question') return null
+		return quiz.value.categories[step.categoryIndex] ?? null
+	})
 
-  const currentQuestion = computed(() => {
-    const step = currentStep.value
-    if (!step || step.type !== 'question' || !quiz.value) return null
-    return quiz.value.categories[step.categoryIndex]?.questions[step.questionIndex] ?? null
-  })
+	const currentQuestion = computed(() => {
+		const step = currentStep.value
+		if (!step || step.type !== 'question' || !quiz.value) return null
+		return quiz.value.categories[step.categoryIndex]?.questions[step.questionIndex] ?? null
+	})
 
-  function load(loadedQuiz: Quiz) {
-    quiz.value = loadedQuiz
-    steps.value = buildSteps(loadedQuiz)
-    currentIndex.value = 0
-    loadError.value = null
-  }
+	function load(loadedQuiz: Quiz) {
+		quiz.value = loadedQuiz
+		steps.value = buildSteps(loadedQuiz)
+		currentIndex.value = 0
+		loadError.value = null
+	}
 
-  function next() {
-    currentIndex.value = Math.min(currentIndex.value + 1, Math.max(steps.value.length - 1, 0))
-  }
+	function next() {
+		currentIndex.value = Math.min(currentIndex.value + 1, Math.max(steps.value.length - 1, 0))
+	}
 
-  function prev() {
-    currentIndex.value = Math.max(currentIndex.value - 1, 0)
-  }
+	function prev() {
+		currentIndex.value = Math.max(currentIndex.value - 1, 0)
+	}
 
-  function setError(message: string) {
-    loadError.value = message
-  }
+	function setError(message: string) {
+		loadError.value = message
+	}
 
-  return {
-    quiz,
-    steps,
-    currentIndex,
-    loadError,
-    currentStep,
-    currentCategory,
-    currentQuestion,
-    load,
-    next,
-    prev,
-    setError,
-  }
+	return {
+		quiz,
+		steps,
+		currentIndex,
+		loadError,
+		currentStep,
+		currentCategory,
+		currentQuestion,
+		load,
+		next,
+		prev,
+		setError,
+	}
 })

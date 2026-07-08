@@ -4,91 +4,91 @@ import { useQuizFlowStore } from './quizFlow'
 import type { Quiz } from '@/quiz/types'
 
 function question(text: string) {
-  return {
-    text,
-    answers: [
-      { text: 'A', correct: true },
-      { text: 'B', correct: false },
-      { text: 'C', correct: false },
-      { text: 'D', correct: false },
-    ],
-  }
+	return {
+		text,
+		answers: [
+			{ text: 'A', correct: true },
+			{ text: 'B', correct: false },
+			{ text: 'C', correct: false },
+			{ text: 'D', correct: false },
+		],
+	}
 }
 
 function category(name: string, questionCount: number) {
-  return {
-    name,
-    questions: Array.from({ length: questionCount }, (_, i) => question(`${name} Frage ${i + 1}`)),
-  }
+	return {
+		name,
+		questions: Array.from({ length: questionCount }, (_, i) => question(`${name} Frage ${i + 1}`)),
+	}
 }
 
 const quiz: Quiz = {
-  title: 'Testquiz',
-  categories: [category('Kategorie A', 1), category('Kategorie B', 1)],
+	title: 'Testquiz',
+	categories: [category('Kategorie A', 1), category('Kategorie B', 1)],
 }
 
 beforeEach(() => {
-  setActivePinia(createPinia())
+	setActivePinia(createPinia())
 })
 
 describe('useQuizFlowStore', () => {
-  it('starts at the first step after loading a quiz', () => {
-    const store = useQuizFlowStore()
-    store.load(quiz)
-    expect(store.currentStep).toEqual({ type: 'category', categoryIndex: 0 })
-  })
+	it('starts at the first step after loading a quiz', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		expect(store.currentStep).toEqual({ type: 'category', categoryIndex: 0 })
+	})
 
-  it('advances one step at a time with next()', () => {
-    const store = useQuizFlowStore()
-    store.load(quiz)
-    store.next()
-    expect(store.currentStep).toEqual({
-      type: 'question',
-      categoryIndex: 0,
-      questionIndex: 0,
-      resolved: false,
-    })
-  })
+	it('advances one step at a time with next()', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		store.next()
+		expect(store.currentStep).toEqual({
+			type: 'question',
+			categoryIndex: 0,
+			questionIndex: 0,
+			resolved: false,
+		})
+	})
 
-  it('goes back one step at a time with prev()', () => {
-    const store = useQuizFlowStore()
-    store.load(quiz)
-    store.next()
-    store.next()
-    store.prev()
-    expect(store.currentStep).toEqual({
-      type: 'question',
-      categoryIndex: 0,
-      questionIndex: 0,
-      resolved: false,
-    })
-  })
+	it('goes back one step at a time with prev()', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		store.next()
+		store.next()
+		store.prev()
+		expect(store.currentStep).toEqual({
+			type: 'question',
+			categoryIndex: 0,
+			questionIndex: 0,
+			resolved: false,
+		})
+	})
 
-  it('stays on the first step when calling prev() at the start', () => {
-    const store = useQuizFlowStore()
-    store.load(quiz)
-    store.prev()
-    expect(store.currentStep).toEqual({ type: 'category', categoryIndex: 0 })
-  })
+	it('stays on the first step when calling prev() at the start', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		store.prev()
+		expect(store.currentStep).toEqual({ type: 'category', categoryIndex: 0 })
+	})
 
-  it('stays on the last step when calling next() at the end', () => {
-    const store = useQuizFlowStore()
-    store.load(quiz)
-    for (let i = 0; i < 20; i++) store.next()
-    expect(store.currentStep).toEqual({ type: 'end' })
-  })
+	it('stays on the last step when calling next() at the end', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		for (let i = 0; i < 20; i++) store.next()
+		expect(store.currentStep).toEqual({ type: 'end' })
+	})
 
-  it('stores a load error and clears it once a quiz loads successfully', () => {
-    const store = useQuizFlowStore()
-    store.setError('Kein Quiz angegeben.')
-    expect(store.loadError).toBe('Kein Quiz angegeben.')
-    store.load(quiz)
-    expect(store.loadError).toBeNull()
-  })
+	it('stores a load error and clears it once a quiz loads successfully', () => {
+		const store = useQuizFlowStore()
+		store.setError('Kein Quiz angegeben.')
+		expect(store.loadError).toBe('Kein Quiz angegeben.')
+		store.load(quiz)
+		expect(store.loadError).toBeNull()
+	})
 
-  it('does not go negative when calling next() before any quiz is loaded', () => {
-    const store = useQuizFlowStore()
-    store.next()
-    expect(store.currentIndex).toBe(0)
-  })
+	it('does not go negative when calling next() before any quiz is loaded', () => {
+		const store = useQuizFlowStore()
+		store.next()
+		expect(store.currentIndex).toBe(0)
+	})
 })
