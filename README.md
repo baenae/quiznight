@@ -11,6 +11,15 @@
 pnpm install
 ```
 
+### Font "LEMON MILK"
+
+Die Titel-Schrift **LEMON MILK** ist Donationware und darf nicht in diesem (öffentlichen) Repo mitgeliefert werden. Vor dem ersten Start selbst herunterladen:
+
+1. Auf https://www.marsnev.com die Bold-Variante (`LEMONMILK-Bold.otf`) laden.
+2. Die Datei nach `src/assets/font/LEMONMILK-Bold.otf` legen (Ordner ist per `.gitignore` ausgeschlossen).
+
+Ohne diese Datei startet die App trotzdem, Titel werden dann nur mit der Fallback-Schrift dargestellt.
+
 ## Projekt starten
 
 ```sh
