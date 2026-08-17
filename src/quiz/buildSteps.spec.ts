@@ -27,21 +27,26 @@ const quiz: Quiz = {
 }
 
 describe('buildSteps', () => {
-	it('produces category/question pairs and a pause between categories, ending with end', () => {
+	it('starts with a start step, then category/question phases and a pause between categories, ending with end', () => {
 		const steps = buildSteps(quiz)
 
 		expect(steps).toEqual([
+			{ type: 'start' },
 			{ type: 'category', categoryIndex: 0 },
-			{ type: 'question', categoryIndex: 0, questionIndex: 0, resolved: false },
-			{ type: 'question', categoryIndex: 0, questionIndex: 0, resolved: true },
-			{ type: 'question', categoryIndex: 0, questionIndex: 1, resolved: false },
-			{ type: 'question', categoryIndex: 0, questionIndex: 1, resolved: true },
+			{ type: 'question', categoryIndex: 0, questionIndex: 0, phase: 'intro' },
+			{ type: 'question', categoryIndex: 0, questionIndex: 0, phase: 'answers' },
+			{ type: 'question', categoryIndex: 0, questionIndex: 0, phase: 'resolved' },
+			{ type: 'question', categoryIndex: 0, questionIndex: 1, phase: 'intro' },
+			{ type: 'question', categoryIndex: 0, questionIndex: 1, phase: 'answers' },
+			{ type: 'question', categoryIndex: 0, questionIndex: 1, phase: 'resolved' },
 			{ type: 'pause' },
 			{ type: 'category', categoryIndex: 1 },
-			{ type: 'question', categoryIndex: 1, questionIndex: 0, resolved: false },
-			{ type: 'question', categoryIndex: 1, questionIndex: 0, resolved: true },
-			{ type: 'question', categoryIndex: 1, questionIndex: 1, resolved: false },
-			{ type: 'question', categoryIndex: 1, questionIndex: 1, resolved: true },
+			{ type: 'question', categoryIndex: 1, questionIndex: 0, phase: 'intro' },
+			{ type: 'question', categoryIndex: 1, questionIndex: 0, phase: 'answers' },
+			{ type: 'question', categoryIndex: 1, questionIndex: 0, phase: 'resolved' },
+			{ type: 'question', categoryIndex: 1, questionIndex: 1, phase: 'intro' },
+			{ type: 'question', categoryIndex: 1, questionIndex: 1, phase: 'answers' },
+			{ type: 'question', categoryIndex: 1, questionIndex: 1, phase: 'resolved' },
 			{ type: 'end' },
 		])
 	})

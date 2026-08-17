@@ -42,6 +42,28 @@ describe('useQuizKeyboard', () => {
 		expect(event.defaultPrevented).toBe(true)
 	})
 
+	it('calls onNext when ArrowRight is pressed and prevents the default scroll', () => {
+		const onNext = vi.fn()
+		const onPrev = vi.fn()
+		mountWithKeyboard(onNext, onPrev)
+
+		const event = pressKey('ArrowRight')
+
+		expect(onNext).toHaveBeenCalledOnce()
+		expect(event.defaultPrevented).toBe(true)
+	})
+
+	it('calls onPrev when ArrowLeft is pressed and prevents the default scroll', () => {
+		const onNext = vi.fn()
+		const onPrev = vi.fn()
+		mountWithKeyboard(onNext, onPrev)
+
+		const event = pressKey('ArrowLeft')
+
+		expect(onPrev).toHaveBeenCalledOnce()
+		expect(event.defaultPrevented).toBe(true)
+	})
+
 	it('ignores other keys', () => {
 		const onNext = vi.fn()
 		const onPrev = vi.fn()

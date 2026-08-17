@@ -35,18 +35,19 @@ describe('useQuizFlowStore', () => {
 	it('starts at the first step after loading a quiz', () => {
 		const store = useQuizFlowStore()
 		store.load(quiz)
-		expect(store.currentStep).toEqual({ type: 'category', categoryIndex: 0 })
+		expect(store.currentStep).toEqual({ type: 'start' })
 	})
 
 	it('advances one step at a time with next()', () => {
 		const store = useQuizFlowStore()
 		store.load(quiz)
 		store.next()
+		store.next()
 		expect(store.currentStep).toEqual({
 			type: 'question',
 			categoryIndex: 0,
 			questionIndex: 0,
-			resolved: false,
+			phase: 'intro',
 		})
 	})
 
@@ -55,12 +56,13 @@ describe('useQuizFlowStore', () => {
 		store.load(quiz)
 		store.next()
 		store.next()
+		store.next()
 		store.prev()
 		expect(store.currentStep).toEqual({
 			type: 'question',
 			categoryIndex: 0,
 			questionIndex: 0,
-			resolved: false,
+			phase: 'intro',
 		})
 	})
 
@@ -68,7 +70,7 @@ describe('useQuizFlowStore', () => {
 		const store = useQuizFlowStore()
 		store.load(quiz)
 		store.prev()
-		expect(store.currentStep).toEqual({ type: 'category', categoryIndex: 0 })
+		expect(store.currentStep).toEqual({ type: 'start' })
 	})
 
 	it('stays on the last step when calling next() at the end', () => {

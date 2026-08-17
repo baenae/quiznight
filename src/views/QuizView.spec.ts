@@ -3,6 +3,7 @@ import { mount } from '@vue/test-utils'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import { createPinia, setActivePinia } from 'pinia'
 import QuizView from './QuizView.vue'
+import { useQuizFlowStore } from '@/stores/quizFlow'
 
 function jsonResponse(body: unknown, ok = true) {
 	return { ok, json: () => Promise.resolve(body) } as Response
@@ -50,9 +51,28 @@ describe('QuizView', () => {
 		expect(wrapper.text()).toContain('Kein Quiz angegeben')
 	})
 
-	it('shows the first category slide once the quiz has loaded', async () => {
+	it('shows the start slide once the quiz has loaded', async () => {
 		vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse(quiz)))
 		const wrapper = await mountAt({ quiz: 'beispiel.json' })
+		expect(wrapper.text()).toContain('QUIZNIGHT')
+	})
+
+	it('shows the first category slide with category progress after advancing past the start slide', async () => {
+		vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse(quiz)))
+		const wrapper = await mountAt({ quiz: 'beispiel.json' })
+		useQuizFlowStore().next()
+		await wrapper.vm.$nextTick()
 		expect(wrapper.text()).toContain('Kategorie A')
+		expect(wrapper.text()).toContain('Kategorie 1 von 1')
+	})
+
+	it('shows question progress once a question step is reached', async () => {
+		vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse(quiz)))
+		const wrapper = await mountAt({ quiz: 'beispiel.json' })
+		const store = useQuizFlowStore()
+		store.next()
+		store.next()
+		await wrapper.vm.$nextTick()
+		expect(wrapper.text()).toContain('1/5')
 	})
 })

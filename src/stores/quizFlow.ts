@@ -24,6 +24,20 @@ export const useQuizFlowStore = defineStore('quizFlow', () => {
 		return quiz.value.categories[step.categoryIndex]?.questions[step.questionIndex] ?? null
 	})
 
+	const categoryProgress = computed(() => {
+		const step = currentStep.value
+		if (!step || !quiz.value || (step.type !== 'category' && step.type !== 'question')) return null
+		return { index: step.categoryIndex + 1, total: quiz.value.categories.length }
+	})
+
+	const questionProgress = computed(() => {
+		const step = currentStep.value
+		if (!step || step.type !== 'question' || !quiz.value) return null
+		const category = quiz.value.categories[step.categoryIndex]
+		if (!category) return null
+		return { index: step.questionIndex + 1, total: category.questions.length }
+	})
+
 	function load(loadedQuiz: Quiz) {
 		quiz.value = loadedQuiz
 		steps.value = buildSteps(loadedQuiz)
@@ -51,6 +65,8 @@ export const useQuizFlowStore = defineStore('quizFlow', () => {
 		currentStep,
 		currentCategory,
 		currentQuestion,
+		categoryProgress,
+		questionProgress,
 		load,
 		next,
 		prev,
