@@ -1,0 +1,995 @@
+{
+  "title": "QuizNight 2024",
+  "categories": [
+    {
+      "name": "Redewendungen",
+      "questions": [
+        {
+          "text": "Klappe zu...",
+          "answers": [
+            {
+              "text": "Deckel drauf",
+              "correct": false
+            },
+            {
+              "text": "Affe tot",
+              "correct": true
+            },
+            {
+              "text": "Maus in der Falle",
+              "correct": false
+            },
+            {
+              "text": "Klappe auf",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Tomaten auf den...",
+          "answers": [
+            {
+              "text": "Augen",
+              "correct": true
+            },
+            {
+              "text": "Ohren",
+              "correct": false
+            },
+            {
+              "text": "Mund",
+              "correct": false
+            },
+            {
+              "text": "Teig",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "elephant in the ...",
+          "answers": [
+            {
+              "text": "cabinet",
+              "correct": false
+            },
+            {
+              "text": "china shop",
+              "correct": false
+            },
+            {
+              "text": "room",
+              "correct": true
+            },
+            {
+              "text": "porcelain store",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "ein Mann, ...",
+          "answers": [
+            {
+              "text": "ein Schwert",
+              "correct": false
+            },
+            {
+              "text": "eine Frau",
+              "correct": false
+            },
+            {
+              "text": "ein Wort",
+              "correct": true
+            },
+            {
+              "text": "eine Katastrophe",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Angriff ist ...",
+          "answers": [
+            {
+              "text": "eine Kunst, die niemand kann",
+              "correct": false
+            },
+            {
+              "text": "die beste Verteidigung",
+              "correct": true
+            },
+            {
+              "text": "der Vater aller Dinge",
+              "correct": false
+            },
+            {
+              "text": "ist mehr wert als Silber und Gold",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wann war dieses Lied?",
+      "questions": [
+        {
+          "text": "Aus welchem Jahr stammt dieses Lied?",
+          "answers": [
+            {
+              "text": "1965",
+              "correct": false
+            },
+            {
+              "text": "1975",
+              "correct": false
+            },
+            {
+              "text": "1985",
+              "correct": true
+            },
+            {
+              "text": "1995",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Aus welchem Jahr stammt dieses Lied?",
+          "answers": [
+            {
+              "text": "1991",
+              "correct": false
+            },
+            {
+              "text": "1996",
+              "correct": false
+            },
+            {
+              "text": "2001",
+              "correct": false
+            },
+            {
+              "text": "2006",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Aus welchem Jahr stammt dieses Lied?",
+          "answers": [
+            {
+              "text": "1979",
+              "correct": true
+            },
+            {
+              "text": "1984",
+              "correct": false
+            },
+            {
+              "text": "1989",
+              "correct": false
+            },
+            {
+              "text": "1994",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Aus welchem Jahr stammt dieses Lied?",
+          "answers": [
+            {
+              "text": "2000",
+              "correct": true
+            },
+            {
+              "text": "2002",
+              "correct": false
+            },
+            {
+              "text": "2004",
+              "correct": false
+            },
+            {
+              "text": "2006",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Aus welchem Jahr stammt dieses Lied?",
+          "answers": [
+            {
+              "text": "1986",
+              "correct": false
+            },
+            {
+              "text": "1991",
+              "correct": true
+            },
+            {
+              "text": "1996",
+              "correct": false
+            },
+            {
+              "text": "2001",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Geografie",
+      "questions": [
+        {
+          "text": "Persien heisst heute?",
+          "answers": [
+            {
+              "text": "Iran",
+              "correct": true
+            },
+            {
+              "text": "Irak",
+              "correct": false
+            },
+            {
+              "text": "Immer noch Persien",
+              "correct": false
+            },
+            {
+              "text": "Kurdistan",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Aus welchem Brettspiel kennt man Kamschatka",
+          "answers": [
+            {
+              "text": "Schach",
+              "correct": false
+            },
+            {
+              "text": "Tabu",
+              "correct": false
+            },
+            {
+              "text": "Risiko",
+              "correct": true
+            },
+            {
+              "text": "Otello",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Das Land Siam heisst heute?",
+          "answers": [
+            {
+              "text": "Simbabwe",
+              "correct": false
+            },
+            {
+              "text": "China",
+              "correct": false
+            },
+            {
+              "text": "Thailand",
+              "correct": true
+            },
+            {
+              "text": "Indonesien",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Nenne die südlichste dieser vier Städte",
+          "answers": [
+            {
+              "text": "London",
+              "correct": true
+            },
+            {
+              "text": "Berlin",
+              "correct": false
+            },
+            {
+              "text": "Amsterdam",
+              "correct": false
+            },
+            {
+              "text": "Kopenhagen",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Welche Städte liegen auf demselben Kontinent?",
+          "answers": [
+            {
+              "text": "Johannesburg und Adelaide",
+              "correct": false
+            },
+            {
+              "text": "Irak und Tokio",
+              "correct": true
+            },
+            {
+              "text": "Kapstadt und Neu Dehli",
+              "correct": false
+            },
+            {
+              "text": "Bangalore und Freetown",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Regionale Lebensmittel",
+      "questions": [
+        {
+          "text": "Woher stammt Tee?",
+          "answers": [
+            {
+              "text": "Ceylon",
+              "correct": false
+            },
+            {
+              "text": "China",
+              "correct": true
+            },
+            {
+              "text": "Japan",
+              "correct": false
+            },
+            {
+              "text": "Assam",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Woher stammt die Tomate?",
+          "answers": [
+            {
+              "text": "Italien",
+              "correct": false
+            },
+            {
+              "text": "Südamerika",
+              "correct": true
+            },
+            {
+              "text": "China",
+              "correct": false
+            },
+            {
+              "text": "Nord Afrika",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Woher stammt Kaffee?",
+          "answers": [
+            {
+              "text": "Afrika",
+              "correct": true
+            },
+            {
+              "text": "Südamerika",
+              "correct": false
+            },
+            {
+              "text": "Asien",
+              "correct": false
+            },
+            {
+              "text": "Europa",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wie kam die Nudel nach Italien?",
+          "answers": [
+            {
+              "text": "durch Marco Polo",
+              "correct": false
+            },
+            {
+              "text": "durch Afrikanische Einwanderer",
+              "correct": false
+            },
+            {
+              "text": "durch Chineische Einwanderer",
+              "correct": false
+            },
+            {
+              "text": "die Römer haben sie selbst erfunden",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Welches Land trinkt den meißten Wiskey?",
+          "answers": [
+            {
+              "text": "USA",
+              "correct": false
+            },
+            {
+              "text": "Irland",
+              "correct": false
+            },
+            {
+              "text": "Indien",
+              "correct": true
+            },
+            {
+              "text": "Deutschland",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Whats my Name",
+      "questions": [
+        {
+          "text": "Muhammad Ali hies mit bürgerlichem Namen...",
+          "answers": [
+            {
+              "text": "Joseph William Frazier",
+              "correct": false
+            },
+            {
+              "text": "Sylvester Enzio Stallone",
+              "correct": false
+            },
+            {
+              "text": "Cassius Marcellus Clay Jr.",
+              "correct": true
+            },
+            {
+              "text": "Jimmy Ellis",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Sisi ist geborene...",
+          "answers": [
+            {
+              "text": "Maria Anna Ricciarda Carolina Margherita Pia",
+              "correct": false
+            },
+            {
+              "text": "Maria Theresia Josepha Johanna von Österreich-Este",
+              "correct": false
+            },
+            {
+              "text": "Maria Antonia von Österreich",
+              "correct": false
+            },
+            {
+              "text": "Elisabeth Amalie Eugenie von Wittelsbach",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Jan Ulrich Max Vetter und ...",
+          "answers": [
+            {
+              "text": "Lance Armstrong",
+              "correct": false
+            },
+            {
+              "text": "Bela B.",
+              "correct": true
+            },
+            {
+              "text": "Olli Schulz",
+              "correct": false
+            },
+            {
+              "text": "Professor Futura",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Siddhartha Gautama ist ...",
+          "answers": [
+            {
+              "text": "Religiöser Gründer",
+              "correct": true
+            },
+            {
+              "text": "Großer Krieger",
+              "correct": false
+            },
+            {
+              "text": "Königlicher Herrscher",
+              "correct": false
+            },
+            {
+              "text": "Erfinder",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Terrence Gene Bollea ist besser bekannt als",
+          "answers": [
+            {
+              "text": "Terry Crews",
+              "correct": false
+            },
+            {
+              "text": "Mr. T",
+              "correct": false
+            },
+            {
+              "text": "Hulk Hogan",
+              "correct": true
+            },
+            {
+              "text": "Ted Bundy",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Boybands",
+      "questions": [
+        {
+          "text": "Welche Band sang dieses Lied?",
+          "answers": [
+            {
+              "text": "The Jackson 5",
+              "correct": false
+            },
+            {
+              "text": "Take That",
+              "correct": true
+            },
+            {
+              "text": "New Kids on the Block",
+              "correct": false
+            },
+            {
+              "text": "Osmond Boys",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Welche Band sang dieses Lied?",
+          "answers": [
+            {
+              "text": "Take That",
+              "correct": false
+            },
+            {
+              "text": "NSYNC",
+              "correct": false
+            },
+            {
+              "text": "The Backstreet Boys",
+              "correct": true
+            },
+            {
+              "text": "Boyz II Men",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer gehörte nicht zu den Backstreet Boys?",
+          "answers": [
+            {
+              "text": "Nick Carter",
+              "correct": false
+            },
+            {
+              "text": "Brian Littrell",
+              "correct": false
+            },
+            {
+              "text": "Howard Donald",
+              "correct": true
+            },
+            {
+              "text": "AJ MCLean",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Welche Band sang dieses Lied?",
+          "answers": [
+            {
+              "text": "NSYNC",
+              "correct": false
+            },
+            {
+              "text": "The Osmonds",
+              "correct": false
+            },
+            {
+              "text": "The Jackson 5",
+              "correct": false
+            },
+            {
+              "text": "Boyz II Men",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Wer gehört nicht dazu?",
+          "answers": [
+            {
+              "text": "Michael",
+              "correct": false
+            },
+            {
+              "text": "Jermaine",
+              "correct": false
+            },
+            {
+              "text": "Otis",
+              "correct": true
+            },
+            {
+              "text": "Tito",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Geschichte",
+      "questions": [
+        {
+          "text": "Was war der Grund für die Ölkriese in den 70gern?",
+          "answers": [
+            {
+              "text": "Vietnam-Krieg",
+              "correct": false
+            },
+            {
+              "text": "Jom-Kippur-Krieg",
+              "correct": true
+            },
+            {
+              "text": "Rohstoffmangel",
+              "correct": false
+            },
+            {
+              "text": "Klimawandel",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Aus welcher Stadt stammt Marie-Antoinette?",
+          "answers": [
+            {
+              "text": "Prag",
+              "correct": false
+            },
+            {
+              "text": "Wien",
+              "correct": true
+            },
+            {
+              "text": "Paris",
+              "correct": false
+            },
+            {
+              "text": "Marseille",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer hat die erste deutsche Autobahn eröffnet?",
+          "answers": [
+            {
+              "text": "Adolf Hilter",
+              "correct": false
+            },
+            {
+              "text": "Heinrich Himmler",
+              "correct": false
+            },
+            {
+              "text": "Kaiser Willhelm II",
+              "correct": false
+            },
+            {
+              "text": "Konrad Adenauer",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Der Bremer HBF wurde im 2ten Weltkrieg...",
+          "answers": [
+            {
+              "text": "vollkommen zerstört",
+              "correct": false
+            },
+            {
+              "text": "mit einer darüberlaufenden Straße getarnt",
+              "correct": true
+            },
+            {
+              "text": "abgebaut und später wieder aufgebaut",
+              "correct": false
+            },
+            {
+              "text": "als Bunker benutzt",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "In welcher Sprache wurde das Roland Lied im Original geschrieben? Der Rpland ist ...",
+          "answers": [
+            {
+              "text": "Deutsch",
+              "correct": false
+            },
+            {
+              "text": "Niederländisch",
+              "correct": false
+            },
+            {
+              "text": "Französisch",
+              "correct": true
+            },
+            {
+              "text": "Bayrisch",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hauptstädte",
+      "questions": [
+        {
+          "text": "Wie heißt Hauptstadt der Schweiz?",
+          "answers": [
+            {
+              "text": "Zürich",
+              "correct": false
+            },
+            {
+              "text": "Genf",
+              "correct": false
+            },
+            {
+              "text": "Wien",
+              "correct": false
+            },
+            {
+              "text": "Basel",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Wie heißt Brasiliens Hauptstadt?",
+          "answers": [
+            {
+              "text": "São Paulo",
+              "correct": false
+            },
+            {
+              "text": "Buenos Aires",
+              "correct": false
+            },
+            {
+              "text": "Rio de Janeiro",
+              "correct": false
+            },
+            {
+              "text": "Brasília",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Wie heißt die Hauptstadt von Venezuela?",
+          "answers": [
+            {
+              "text": "Bogotá",
+              "correct": false
+            },
+            {
+              "text": "La Paz",
+              "correct": false
+            },
+            {
+              "text": "Montevideo",
+              "correct": false
+            },
+            {
+              "text": "Caracas",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Wie heißt Australiens Hauptstadt?",
+          "answers": [
+            {
+              "text": "Sydney",
+              "correct": false
+            },
+            {
+              "text": "Melbourne",
+              "correct": false
+            },
+            {
+              "text": "Canberra",
+              "correct": true
+            },
+            {
+              "text": "Brisbane",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wie heisst die Hauptstadt der Vereinigten Arabischen Emirate?",
+          "answers": [
+            {
+              "text": "Schardscha",
+              "correct": false
+            },
+            {
+              "text": "Dubai",
+              "correct": false
+            },
+            {
+              "text": "Doha",
+              "correct": false
+            },
+            {
+              "text": "Abu Dhabi",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Der Herr der Ringe",
+      "questions": [
+        {
+          "text": "Wer schrieb der Herr der Ringe",
+          "answers": [
+            {
+              "text": "George R. R. Martin",
+              "correct": false
+            },
+            {
+              "text": "J. R. R. Tolkien",
+              "correct": true
+            },
+            {
+              "text": "J. K. Rowling",
+              "correct": false
+            },
+            {
+              "text": "James S. A. Corey",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer ist der Herr der Ringe?",
+          "answers": [
+            {
+              "text": "Darth Vader",
+              "correct": false
+            },
+            {
+              "text": "Thanos",
+              "correct": false
+            },
+            {
+              "text": "Sauron",
+              "correct": true
+            },
+            {
+              "text": "Lord Voldemort",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Welche dieser Namen sind Spinnen aus HDR?",
+          "answers": [
+            {
+              "text": "Kankra",
+              "correct": true
+            },
+            {
+              "text": "Aragog",
+              "correct": false
+            },
+            {
+              "text": "Ungoliant",
+              "correct": true
+            },
+            {
+              "text": "Arachnid",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer hatte den Ring am längsten?",
+          "answers": [
+            {
+              "text": "Anduin",
+              "correct": true
+            },
+            {
+              "text": "Smeagol",
+              "correct": false
+            },
+            {
+              "text": "Sauron",
+              "correct": false
+            },
+            {
+              "text": "Gandalf",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer findet den Ring im Anduin?",
+          "answers": [
+            {
+              "text": "Smeagol",
+              "correct": false
+            },
+            {
+              "text": "Deagol",
+              "correct": true
+            },
+            {
+              "text": "Elendil",
+              "correct": false
+            },
+            {
+              "text": "Isildur",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

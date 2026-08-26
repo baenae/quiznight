@@ -37,7 +37,10 @@
 	letter-spacing: 0.9375vw;
 	color: #fff;
 	white-space: nowrap;
-	animation: glow-pulse 4s ease-in-out infinite;
+	opacity: 0;
+	animation:
+		glow-pulse 4s ease-in-out infinite,
+		title-reveal 0.5s ease-out 1s forwards;
 }
 
 .title {
@@ -54,7 +57,10 @@
 	letter-spacing: 3.59vw;
 	color: transparent;
 	-webkit-text-stroke: 0.15vw #fff;
-	animation: glow-pulse 4s ease-in-out infinite;
+	opacity: 0;
+	animation:
+		glow-pulse 20s ease-in-out infinite,
+		title-reveal 0.5s ease-out 3s forwards;
 }
 
 @keyframes glow-pulse {
@@ -64,6 +70,15 @@
 	}
 	50% {
 		text-shadow: 0 0 2.6vw #00e5ff;
+	}
+}
+
+@keyframes title-reveal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
 </style>

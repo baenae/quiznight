@@ -100,7 +100,7 @@ function answerLetter(index: number): string {
 	top: 12.34vw;
 	width: 72.9vw;
 	font-size: 5.21vw;
-	animation: question-reveal 0.8s ease-out 2s both;
+	animation: question-reveal 0.8s ease-out both;
 }
 
 @keyframes question-reveal {

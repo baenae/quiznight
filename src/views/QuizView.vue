@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { computed, onMounted, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { loadQuiz } from '@/quiz/loadQuiz'
 import { useQuizFlowStore } from '@/stores/quizFlow'
 import { useQuizKeyboard } from '@/composables/useQuizKeyboard'
@@ -13,6 +13,7 @@ import EndSlide from '@/components/slides/EndSlide.vue'
 import OverviewSlide from '@/components/slides/OverviewSlide.vue'
 
 const route = useRoute()
+const router = useRouter()
 const store = useQuizFlowStore()
 
 useQuizKeyboard(
@@ -52,6 +53,22 @@ onMounted(async () => {
 		store.setError(result.message)
 	}
 })
+
+watch(
+	() => store.currentStep,
+	(step) => {
+		if (!step) return
+		const query: Record<string, string> = {}
+		if (typeof route.query.quiz === 'string') query.quiz = route.query.quiz
+		if (step.type === 'category') {
+			query.category = String(step.categoryIndex + 1)
+		} else if (step.type === 'question') {
+			query.category = String(step.categoryIndex + 1)
+			query.question = String(step.questionIndex + 1)
+		}
+		router.replace({ query })
+	},
+)
 </script>
 
 <template>

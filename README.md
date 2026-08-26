@@ -32,6 +32,13 @@ Der Dev-Server läuft danach unter `http://localhost:5173/`. Das Quiz wird über
 http://localhost:5173/?quiz=beispiel.json
 ```
 
+Links zu den vorhandenen Quiz-JSONs zum Testen:
+
+- http://localhost:5173/?quiz=beispiel.json
+- http://localhost:5173/?quiz=alte_quiznights_json/quiznight-2024.json
+- http://localhost:5173/?quiz=alte_quiznights_json/quiznight-2024-schule.json
+- http://localhost:5173/?quiz=alte_quiznights_json/quiznight-2025.json
+
 Mit Leertaste geht es zur nächsten, mit Backspace zur vorherigen Folie.
 
 ## Tests & Type-Check

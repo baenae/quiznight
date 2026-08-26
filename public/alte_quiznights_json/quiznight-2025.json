@@ -1,0 +1,995 @@
+{
+  "title": "QuizNight 2025",
+  "categories": [
+    {
+      "name": "Tod, tod, tod",
+      "questions": [
+        {
+          "text": "In welchem Jahr starb Elvis Presley?",
+          "answers": [
+            {
+              "text": "1967",
+              "correct": false
+            },
+            {
+              "text": "1977",
+              "correct": true
+            },
+            {
+              "text": "1987",
+              "correct": false
+            },
+            {
+              "text": "1997",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "In welchem Jahr starb John Lennon?",
+          "answers": [
+            {
+              "text": "1970",
+              "correct": false
+            },
+            {
+              "text": "1975",
+              "correct": false
+            },
+            {
+              "text": "1980",
+              "correct": true
+            },
+            {
+              "text": "1985",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "In welchem Jahr starb Helmut Kohl?",
+          "answers": [
+            {
+              "text": "2008",
+              "correct": false
+            },
+            {
+              "text": "2011",
+              "correct": false
+            },
+            {
+              "text": "2014",
+              "correct": false
+            },
+            {
+              "text": "2017",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "In welchem Jahr starb Joseph Stalin?",
+          "answers": [
+            {
+              "text": "1933",
+              "correct": false
+            },
+            {
+              "text": "1945",
+              "correct": false
+            },
+            {
+              "text": "1953",
+              "correct": true
+            },
+            {
+              "text": "1961",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "In welchem Jahr starb Karl der Große",
+          "answers": [
+            {
+              "text": "614",
+              "correct": false
+            },
+            {
+              "text": "814",
+              "correct": true
+            },
+            {
+              "text": "1014",
+              "correct": false
+            },
+            {
+              "text": "1214",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business Insider",
+      "questions": [
+        {
+          "text": "Lidl gehört zur?",
+          "answers": [
+            {
+              "text": "Gelb-Gruppe",
+              "correct": false
+            },
+            {
+              "text": "Rot-Gruppe",
+              "correct": false
+            },
+            {
+              "text": "Aldi-Gruppe",
+              "correct": false
+            },
+            {
+              "text": "Schwarz-Gruppe",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Was hat Jen-Hsun Huang gegründet und macht ihn zu einem der reichsten Menschen der Welt?",
+          "answers": [
+            {
+              "text": "Nvidia",
+              "correct": true
+            },
+            {
+              "text": "Huawei",
+              "correct": false
+            },
+            {
+              "text": "Alibaba Group",
+              "correct": false
+            },
+            {
+              "text": "Alphabet",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Welches Unternehmen hat den Größten Umsatz der Welt?",
+          "answers": [
+            {
+              "text": "Walmart",
+              "correct": true
+            },
+            {
+              "text": "OpenAi",
+              "correct": false
+            },
+            {
+              "text": "Volkswagen",
+              "correct": false
+            },
+            {
+              "text": "Nestlé",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Welches land hat die größte Containerflotte der Welt. Also die größte Firma?",
+          "answers": [
+            {
+              "text": "Deutschland",
+              "correct": false
+            },
+            {
+              "text": "China",
+              "correct": false
+            },
+            {
+              "text": "Dänemark",
+              "correct": false
+            },
+            {
+              "text": "Schweiz",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Was zerstörte die Deep Water Horizon?",
+          "answers": [
+            {
+              "text": "Erdbeben",
+              "correct": false
+            },
+            {
+              "text": "Tzunami",
+              "correct": false
+            },
+            {
+              "text": "Sonneneruption",
+              "correct": false
+            },
+            {
+              "text": "Blow out",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnützes Wissen",
+      "questions": [
+        {
+          "text": "Welcher Sänger machte das Teufelshörner Zeichen bekannt?",
+          "answers": [
+            {
+              "text": "Ozzy Osbourne",
+              "correct": false
+            },
+            {
+              "text": "Ronnie James Dio",
+              "correct": true
+            },
+            {
+              "text": "Lemmy Kilmister",
+              "correct": false
+            },
+            {
+              "text": "Phil Taylor",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was für ein Landsmann war Ötzi",
+          "answers": [
+            {
+              "text": "Deutscher",
+              "correct": false
+            },
+            {
+              "text": "Türke",
+              "correct": true
+            },
+            {
+              "text": "Österreicher",
+              "correct": false
+            },
+            {
+              "text": "Italiener",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was ist eine Piloerektion?",
+          "answers": [
+            {
+              "text": "Steifer Mikropenis",
+              "correct": false
+            },
+            {
+              "text": "Pylonen im alten Griechenland",
+              "correct": false
+            },
+            {
+              "text": "Pylonen die von alleine wieder aufstehen",
+              "correct": false
+            },
+            {
+              "text": "Gänsehaut",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Wann gab es den ersten dokumentierten Mittelfinger?",
+          "answers": [
+            {
+              "text": "424 vor Christus",
+              "correct": true
+            },
+            {
+              "text": "424 nach Christus",
+              "correct": false
+            },
+            {
+              "text": "1424",
+              "correct": false
+            },
+            {
+              "text": "1924",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was ist eine Bogenminute?",
+          "answers": [
+            {
+              "text": "1/60 Grad",
+              "correct": true
+            },
+            {
+              "text": "Impuls beim Laserstrahl",
+              "correct": false
+            },
+            {
+              "text": "Langezogener Geigenlaut",
+              "correct": false
+            },
+            {
+              "text": "Kurve bei der Formel 1.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Irgendwas mit Deutschland",
+      "questions": [
+        {
+          "text": "Was hat Rudolf Steiner nicht verbrochen?",
+          "answers": [
+            {
+              "text": "Waldorfpädagogik",
+              "correct": false
+            },
+            {
+              "text": "Anthroposophie",
+              "correct": false
+            },
+            {
+              "text": "Thermodynamik",
+              "correct": true
+            },
+            {
+              "text": "demeter",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Bei welcher Bravo Hits sind wir aktuell?",
+          "answers": [
+            {
+              "text": "91",
+              "correct": false
+            },
+            {
+              "text": "111",
+              "correct": false
+            },
+            {
+              "text": "131",
+              "correct": true
+            },
+            {
+              "text": "gibt es nicht mehr",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was führte zur Ölkriese 1973 in Deutschland?",
+          "answers": [
+            {
+              "text": "Vietnamkrieg",
+              "correct": false
+            },
+            {
+              "text": "Bewegung 2. Juni",
+              "correct": false
+            },
+            {
+              "text": "Jom-Kippur-Krieg",
+              "correct": true
+            },
+            {
+              "text": "Erster Golfkrieg",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Deutschland hat drei Geheimdienste. Welcher gehört nicht dazu?",
+          "answers": [
+            {
+              "text": "MAD",
+              "correct": false
+            },
+            {
+              "text": "BfV",
+              "correct": false
+            },
+            {
+              "text": "BND",
+              "correct": false
+            },
+            {
+              "text": "BPG",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Mit wem hatte Alessandra Meyer-Wölden sieben Jahre zusammen?",
+          "answers": [
+            {
+              "text": "Boris Becker",
+              "correct": false
+            },
+            {
+              "text": "Tommy Haas",
+              "correct": true
+            },
+            {
+              "text": "Michael Stich",
+              "correct": false
+            },
+            {
+              "text": "Roger Federer",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deutschland Top 10",
+      "questions": [
+        {
+          "text": "The Fate of Ophelia",
+          "answers": [
+            {
+              "text": "Taylor Swift",
+              "correct": true
+            },
+            {
+              "text": "Ariana Grande",
+              "correct": false
+            },
+            {
+              "text": "Selena Gomez",
+              "correct": false
+            },
+            {
+              "text": "Miley Cyrus",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Golden",
+          "answers": [
+            {
+              "text": "KPop Deamon Hunters",
+              "correct": true
+            },
+            {
+              "text": "Son of the White Mare",
+              "correct": false
+            },
+            {
+              "text": "Over the Moon",
+              "correct": false
+            },
+            {
+              "text": "Princess Mononoke",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "69",
+          "answers": [
+            {
+              "text": "Apache 207, Capital Bra",
+              "correct": false
+            },
+            {
+              "text": "Bones MC, CRO",
+              "correct": false
+            },
+            {
+              "text": "Haftbefehl, Bazzazian",
+              "correct": true
+            },
+            {
+              "text": "Sido, Jazeeek",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Berghain",
+          "answers": [
+            {
+              "text": "Lily Allen, Rosalia, Iyes Tumor",
+              "correct": false
+            },
+            {
+              "text": "Björk, Rosalia, Iyes Tumor",
+              "correct": true
+            },
+            {
+              "text": "Massive Attack, Rosalia, Iyes Tumor",
+              "correct": false
+            },
+            {
+              "text": "Portishead, Rosalia, Iyes Tumor",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Fucked Up",
+          "answers": [
+            {
+              "text": "Katja Krassavice, makko",
+              "correct": false
+            },
+            {
+              "text": "Shirin David, makko",
+              "correct": false
+            },
+            {
+              "text": "Nina Chuba, makko",
+              "correct": true
+            },
+            {
+              "text": "Kitty Kat, makko",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Die Sipmsons",
+      "questions": [
+        {
+          "text": "Wie heißt der Assistent von Mr. Burns?",
+          "answers": [
+            {
+              "text": "Waylon Smithers Jr.",
+              "correct": true
+            },
+            {
+              "text": "Homer J. Simpson",
+              "correct": false
+            },
+            {
+              "text": "Lenford „Lenny“ Leonard",
+              "correct": false
+            },
+            {
+              "text": "Ned Flanders",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer komponierte das alte Intro von den Simpsons?",
+          "answers": [
+            {
+              "text": "Michael Jackson",
+              "correct": false
+            },
+            {
+              "text": "Danny Elfman",
+              "correct": true
+            },
+            {
+              "text": "Matt Groening",
+              "correct": false
+            },
+            {
+              "text": "Ennio Morricone",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wie heisst Milhouse van Houten mit Nachnamen",
+          "answers": [
+            {
+              "text": "Starbeam",
+              "correct": false
+            },
+            {
+              "text": "Muntz",
+              "correct": false
+            },
+            {
+              "text": "van Houten",
+              "correct": true
+            },
+            {
+              "text": "Skinner",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wo tauchten die Simpsons zum ersten mal auf?",
+          "answers": [
+            {
+              "text": "Die Bill Cosby Show",
+              "correct": false
+            },
+            {
+              "text": "Goldberg Show",
+              "correct": false
+            },
+            {
+              "text": "Matt Groening Show",
+              "correct": false
+            },
+            {
+              "text": "Tracey Ullman Show",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Mit wem spielt Matt Grorning in einer Band?",
+          "answers": [
+            {
+              "text": "Hanya Yanagihara",
+              "correct": false
+            },
+            {
+              "text": "Stephen King",
+              "correct": true
+            },
+            {
+              "text": "T.C. Boyle",
+              "correct": false
+            },
+            {
+              "text": "George R. R. Martin",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Weltreligion",
+      "questions": [
+        {
+          "text": "Es gibt keinen Gott außer Allah und ...",
+          "answers": [
+            {
+              "text": "alle ungläubigen müssen sterben",
+              "correct": false
+            },
+            {
+              "text": "Jesus ist sein Sohn",
+              "correct": false
+            },
+            {
+              "text": "Mohammed ist sein Prophet",
+              "correct": true
+            },
+            {
+              "text": "Friede auf Erden",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Allāhu akbar",
+          "answers": [
+            {
+              "text": "Gott ist groß",
+              "correct": true
+            },
+            {
+              "text": "Tod den Ungläubigen",
+              "correct": false
+            },
+            {
+              "text": "Preis und Anbetung",
+              "correct": false
+            },
+            {
+              "text": "Pilgerreise nach Mekka",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wie hies im Judentum die erste Frau Adams",
+          "answers": [
+            {
+              "text": "Lilith",
+              "correct": true
+            },
+            {
+              "text": "Eva",
+              "correct": false
+            },
+            {
+              "text": "Maria",
+              "correct": false
+            },
+            {
+              "text": "es gab keine",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer gründete die Scientology",
+          "answers": [
+            {
+              "text": "Hare Krishna",
+              "correct": false
+            },
+            {
+              "text": "Tom Cruise",
+              "correct": false
+            },
+            {
+              "text": "John Steinbeck",
+              "correct": false
+            },
+            {
+              "text": "Ron Hubbard",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Wie hieß die erste Frau des Propheten?",
+          "answers": [
+            {
+              "text": "Fatima",
+              "correct": false
+            },
+            {
+              "text": "Khadija",
+              "correct": true
+            },
+            {
+              "text": "Amira",
+              "correct": false
+            },
+            {
+              "text": "Mahdiya",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Filmmusik",
+      "questions": [
+        {
+          "text": "Raiders March",
+          "answers": [
+            {
+              "text": "Indiana Jones",
+              "correct": true
+            },
+            {
+              "text": "Star Wars",
+              "correct": false
+            },
+            {
+              "text": "Star Trek",
+              "correct": false
+            },
+            {
+              "text": "Ghostbusters",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "My Heart will go on",
+          "answers": [
+            {
+              "text": "Brave Heart",
+              "correct": false
+            },
+            {
+              "text": "Titanic",
+              "correct": true
+            },
+            {
+              "text": "Breakfast at Tiffanies",
+              "correct": false
+            },
+            {
+              "text": "Pulp Fiction",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Theme from",
+          "answers": [
+            {
+              "text": "In einem Land vor unserer Zeit",
+              "correct": false
+            },
+            {
+              "text": "Jurassic Park",
+              "correct": true
+            },
+            {
+              "text": "Star Wars - Das Imperium schlägt zurück",
+              "correct": false
+            },
+            {
+              "text": "Schindlers Liste",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "You're so cool",
+          "answers": [
+            {
+              "text": "Natural Born Killers",
+              "correct": false
+            },
+            {
+              "text": "Reservoir Dogs",
+              "correct": false
+            },
+            {
+              "text": "Pulp Fiction",
+              "correct": false
+            },
+            {
+              "text": "True Romance",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Don Abandons Place",
+          "answers": [
+            {
+              "text": "Dawn of the dead",
+              "correct": false
+            },
+            {
+              "text": "28 Days Later",
+              "correct": true
+            },
+            {
+              "text": "Braindead",
+              "correct": false
+            },
+            {
+              "text": "World war Z",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Serien Titelmelodien",
+      "questions": [
+        {
+          "text": "Akte X",
+          "answers": [
+            {
+              "text": "X-Factor: Das Unfassbare",
+              "correct": false
+            },
+            {
+              "text": "Twin Peaks",
+              "correct": false
+            },
+            {
+              "text": "Battlestar Galactica",
+              "correct": false
+            },
+            {
+              "text": "Akte X",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Hey Beautiful",
+          "answers": [
+            {
+              "text": "Friends",
+              "correct": false
+            },
+            {
+              "text": "Twin Peaks",
+              "correct": true
+            },
+            {
+              "text": "Gilmore Girls",
+              "correct": false
+            },
+            {
+              "text": "Modern Family",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wednesday",
+          "answers": [
+            {
+              "text": "Penny Dreadfull",
+              "correct": false
+            },
+            {
+              "text": "Stranger Things",
+              "correct": false
+            },
+            {
+              "text": "Wednesday",
+              "correct": true
+            },
+            {
+              "text": "Black Mirror",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Yellowstone",
+          "answers": [
+            {
+              "text": "House of Cards",
+              "correct": false
+            },
+            {
+              "text": "Peaky Blinders",
+              "correct": false
+            },
+            {
+              "text": "Yellowstone",
+              "correct": true
+            },
+            {
+              "text": "Breaking Bad",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "the Crown",
+          "answers": [
+            {
+              "text": "Peaky Blinders",
+              "correct": false
+            },
+            {
+              "text": "The Crown",
+              "correct": true
+            },
+            {
+              "text": "Penny Dreadfull",
+              "correct": false
+            },
+            {
+              "text": "Damengambit",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
