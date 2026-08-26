@@ -1,12 +1,18 @@
 import { validateQuiz } from './validateQuiz'
 import type { QuizResult } from './types'
 
+const SAFE_FILE_NAME = /^[\w-]+\.json$/
+
 export async function loadQuiz(fileName: string | null): Promise<QuizResult> {
 	if (!fileName) {
 		return {
 			ok: false,
 			message: 'Kein Quiz angegeben. Bitte "?quiz=<dateiname>.json" an die URL anhängen.',
 		}
+	}
+
+	if (!SAFE_FILE_NAME.test(fileName)) {
+		return { ok: false, message: `Ungültiger Quiz-Dateiname "${fileName}"` }
 	}
 
 	let response: Response

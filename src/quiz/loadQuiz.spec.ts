@@ -18,6 +18,17 @@ describe('loadQuiz', () => {
 		})
 	})
 
+	it('rejects file names that would escape the origin', async () => {
+		const fetchMock = vi.fn()
+		vi.stubGlobal('fetch', fetchMock)
+		const result = await loadQuiz('/evil.example.com/data.json')
+		expect(result).toEqual({
+			ok: false,
+			message: 'Ungültiger Quiz-Dateiname "/evil.example.com/data.json"',
+		})
+		expect(fetchMock).not.toHaveBeenCalled()
+	})
+
 	it('returns an error when the fetch response is not ok', async () => {
 		vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse({}, false)))
 		const result = await loadQuiz('missing.json')
