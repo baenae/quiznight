@@ -10,6 +10,7 @@ import CategorySlide from '@/components/slides/CategorySlide.vue'
 import QuestionSlide from '@/components/slides/QuestionSlide.vue'
 import PauseSlide from '@/components/slides/PauseSlide.vue'
 import EndSlide from '@/components/slides/EndSlide.vue'
+import OverviewSlide from '@/components/slides/OverviewSlide.vue'
 
 const route = useRoute()
 const store = useQuizFlowStore()
@@ -17,6 +18,7 @@ const store = useQuizFlowStore()
 useQuizKeyboard(
 	() => store.next(),
 	() => store.prev(),
+	() => store.toggleOverview(),
 )
 
 const stepType = computed(() => store.currentStep?.type ?? null)
@@ -25,11 +27,27 @@ const questionPhase = computed(() => {
 	return step?.type === 'question' ? step.phase : 'intro'
 })
 
+function queryIndex(name: string): number | undefined {
+	const raw = route.query[name]
+	if (typeof raw !== 'string') return undefined
+	const value = Number(raw)
+	return Number.isInteger(value) ? value - 1 : undefined
+}
+
+function selectFromOverview(categoryIndex: number, questionIndex: number | undefined) {
+	store.jumpTo(categoryIndex, questionIndex)
+	store.toggleOverview()
+}
+
 onMounted(async () => {
 	const fileName = typeof route.query.quiz === 'string' ? route.query.quiz : null
 	const result = await loadQuiz(fileName)
 	if (result.ok) {
 		store.load(result.quiz)
+		const categoryIndex = queryIndex('category')
+		if (categoryIndex !== undefined) {
+			store.jumpTo(categoryIndex, queryIndex('question'))
+		}
 	} else {
 		store.setError(result.message)
 	}
@@ -58,6 +76,11 @@ onMounted(async () => {
 		<PauseSlide v-else-if="stepType === 'pause'" :key="store.currentIndex" />
 		<EndSlide v-else-if="stepType === 'end'" :key="store.currentIndex" />
 	</Transition>
+	<OverviewSlide
+		v-if="store.overviewOpen"
+		:categories="store.quiz?.categories ?? []"
+		@select="selectFromOverview"
+	/>
 </template>
 
 <style>

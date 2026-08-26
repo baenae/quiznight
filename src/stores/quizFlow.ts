@@ -1,6 +1,7 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import { buildSteps, type Step } from '@/quiz/buildSteps'
+import { findStepIndex } from '@/quiz/findStepIndex'
 import type { Quiz } from '@/quiz/types'
 
 export const useQuizFlowStore = defineStore('quizFlow', () => {
@@ -8,6 +9,7 @@ export const useQuizFlowStore = defineStore('quizFlow', () => {
 	const steps = ref<Step[]>([])
 	const currentIndex = ref(0)
 	const loadError = ref<string | null>(null)
+	const overviewOpen = ref(false)
 
 	const currentStep = computed<Step | null>(() => steps.value[currentIndex.value] ?? null)
 
@@ -57,11 +59,23 @@ export const useQuizFlowStore = defineStore('quizFlow', () => {
 		loadError.value = message
 	}
 
+	function jumpTo(categoryIndex: number, questionIndex?: number) {
+		const index = findStepIndex(steps.value, categoryIndex, questionIndex)
+		if (index !== null) {
+			currentIndex.value = index
+		}
+	}
+
+	function toggleOverview() {
+		overviewOpen.value = !overviewOpen.value
+	}
+
 	return {
 		quiz,
 		steps,
 		currentIndex,
 		loadError,
+		overviewOpen,
 		currentStep,
 		currentCategory,
 		currentQuestion,
@@ -71,5 +85,7 @@ export const useQuizFlowStore = defineStore('quizFlow', () => {
 		next,
 		prev,
 		setError,
+		jumpTo,
+		toggleOverview,
 	}
 })

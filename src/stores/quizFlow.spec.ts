@@ -93,4 +93,40 @@ describe('useQuizFlowStore', () => {
 		store.next()
 		expect(store.currentIndex).toBe(0)
 	})
+
+	it('jumps to a category step with jumpTo()', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		store.jumpTo(1)
+		expect(store.currentStep).toEqual({ type: 'category', categoryIndex: 1 })
+	})
+
+	it('jumps to a question intro step with jumpTo()', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		store.jumpTo(1, 0)
+		expect(store.currentStep).toEqual({
+			type: 'question',
+			categoryIndex: 1,
+			questionIndex: 0,
+			phase: 'intro',
+		})
+	})
+
+	it('ignores jumpTo() with an out-of-range category index', () => {
+		const store = useQuizFlowStore()
+		store.load(quiz)
+		store.next()
+		store.jumpTo(99)
+		expect(store.currentIndex).toBe(1)
+	})
+
+	it('toggles the overview with toggleOverview()', () => {
+		const store = useQuizFlowStore()
+		expect(store.overviewOpen).toBe(false)
+		store.toggleOverview()
+		expect(store.overviewOpen).toBe(true)
+		store.toggleOverview()
+		expect(store.overviewOpen).toBe(false)
+	})
 })

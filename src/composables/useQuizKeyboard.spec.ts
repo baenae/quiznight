@@ -3,10 +3,10 @@ import { defineComponent, h } from 'vue'
 import { mount } from '@vue/test-utils'
 import { useQuizKeyboard } from './useQuizKeyboard'
 
-function mountWithKeyboard(onNext: () => void, onPrev: () => void) {
+function mountWithKeyboard(onNext: () => void, onPrev: () => void, onToggleOverview: () => void = () => {}) {
 	const TestComponent = defineComponent({
 		setup() {
-			useQuizKeyboard(onNext, onPrev)
+			useQuizKeyboard(onNext, onPrev, onToggleOverview)
 			return () => h('div')
 		},
 	})
@@ -62,6 +62,15 @@ describe('useQuizKeyboard', () => {
 
 		expect(onPrev).toHaveBeenCalledOnce()
 		expect(event.defaultPrevented).toBe(true)
+	})
+
+	it('calls onToggleOverview when w is pressed', () => {
+		const onToggleOverview = vi.fn()
+		mountWithKeyboard(vi.fn(), vi.fn(), onToggleOverview)
+
+		pressKey('w')
+
+		expect(onToggleOverview).toHaveBeenCalledOnce()
 	})
 
 	it('ignores other keys', () => {

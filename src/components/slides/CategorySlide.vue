@@ -51,6 +51,16 @@ defineProps<{
 	font-size: 6.25vw;
 	text-shadow: 0 0 2.6vw #00e5ff;
 	max-width: 56vw;
+	animation: category-name-reveal 0.8s ease-out 1s both;
+}
+
+@keyframes category-name-reveal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .progress {

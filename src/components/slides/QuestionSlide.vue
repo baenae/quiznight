@@ -29,7 +29,11 @@ function answerLetter(index: number): string {
 				v-for="(answer, index) in answers"
 				:key="index"
 				class="answer"
-				:class="phase === 'resolved' ? (answer.correct ? 'correct' : 'incorrect') : ''"
+				:class="[
+					phase === 'resolved' ? (answer.correct ? 'correct' : 'incorrect') : '',
+					phase === 'answers' ? 'answer--reveal' : '',
+				]"
+				:style="{ '--reveal-index': index }"
 			>
 				<span class="answer-letter">{{ answerLetter(index) }}</span>
 				<span class="answer-text" :style="{ fontSize: `${answerFontSize(answer.text)}px` }">{{
@@ -96,6 +100,16 @@ function answerLetter(index: number): string {
 	top: 12.34vw;
 	width: 72.9vw;
 	font-size: 5.21vw;
+	animation: question-reveal 0.8s ease-out 2s both;
+}
+
+@keyframes question-reveal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .question-text--compact {
@@ -160,5 +174,32 @@ function answerLetter(index: number): string {
 
 .answer.incorrect {
 	opacity: 0.33;
+	border-color: rgba(255, 255, 255, 0.15);
+	box-shadow: none;
+}
+
+.answer.incorrect .answer-letter,
+.answer.incorrect .answer-text {
+	text-shadow: none;
+}
+
+.answer--reveal {
+	animation: answer-reveal 0.6s ease-out both;
+	animation-delay: calc(var(--reveal-index) * 0.5s);
+}
+
+@keyframes answer-reveal {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	60% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 </style>

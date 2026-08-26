@@ -75,4 +75,30 @@ describe('QuizView', () => {
 		await wrapper.vm.$nextTick()
 		expect(wrapper.text()).toContain('1/5')
 	})
+
+	it('jumps directly to the question given by the category/question query params (1-based)', async () => {
+		vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse(quiz)))
+		const wrapper = await mountAt({ quiz: 'beispiel.json', category: '1', question: '2' })
+		expect(wrapper.text()).toContain('Frage 2')
+	})
+
+	it('shows the overview and jumps there on select when overviewOpen is toggled', async () => {
+		vi.stubGlobal('fetch', vi.fn().mockResolvedValue(jsonResponse(quiz)))
+		const wrapper = await mountAt({ quiz: 'beispiel.json' })
+		const store = useQuizFlowStore()
+
+		store.toggleOverview()
+		await wrapper.vm.$nextTick()
+		expect(wrapper.text()).toContain('Kategorie A')
+
+		await wrapper.find('.question-link').trigger('click')
+
+		expect(store.overviewOpen).toBe(false)
+		expect(store.currentStep).toEqual({
+			type: 'question',
+			categoryIndex: 0,
+			questionIndex: 0,
+			phase: 'intro',
+		})
+	})
 })
