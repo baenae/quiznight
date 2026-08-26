@@ -1,15 +1,17 @@
 <script setup lang="ts"></script>
 
 <template>
-	<div class="end-slide">
+	<div class="start-slide">
 		<img src="@/assets/background.jpg" alt="" class="background" />
-		<p class="brand">QUIZNIGHT</p>
-		<p class="title">ENDE</p>
+		<div class="content">
+			<h1 class="title">QUIZNIGHT</h1>
+			<p class="byline">by Bänä – EST. 2019</p>
+		</div>
 	</div>
 </template>
 
 <style scoped>
-.end-slide {
+.start-slide {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
@@ -25,35 +27,22 @@
 	object-fit: cover;
 }
 
-.brand {
+.content {
 	position: absolute;
 	left: 50%;
-	top: 16.93vw;
+	top: 40.42vw;
 	transform: translateX(-50%);
-	margin: 0;
-	font-family: 'LEMON MILK', sans-serif;
-	font-weight: 700;
-	font-size: 3.125vw;
-	letter-spacing: 0.9375vw;
-	color: #fff;
-	white-space: nowrap;
-	animation: glow-pulse 4s ease-in-out infinite;
+	text-align: center;
 }
 
 .title {
-	position: absolute;
-	left: 50%;
-	top: 19.06vw;
-	transform: translateX(-50%);
 	margin: 0;
-	width: 63.75vw;
-	text-align: center;
 	font-family: 'LEMON MILK', sans-serif;
 	font-weight: 700;
-	font-size: 11.98vw;
-	letter-spacing: 3.59vw;
-	color: transparent;
-	-webkit-text-stroke: 0.15vw #fff;
+	font-size: 6.25vw;
+	letter-spacing: 1.875vw;
+	color: #fff;
+	white-space: nowrap;
 	animation: glow-pulse 4s ease-in-out infinite;
 }
 
@@ -65,5 +54,13 @@
 	50% {
 		text-shadow: 0 0 2.6vw #00e5ff;
 	}
+}
+
+.byline {
+	margin: 4vw 0 0;
+	font-weight: 700;
+	font-size: 1.25vw;
+	letter-spacing: 0.375vw;
+	color: #36a9bc;
 }
 </style>

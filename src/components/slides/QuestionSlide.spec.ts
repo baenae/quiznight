@@ -10,9 +10,18 @@ const answers = [
 ]
 
 describe('QuestionSlide', () => {
+	it('shows only the question text during the intro phase', () => {
+		const wrapper = mount(QuestionSlide, {
+			props: { text: 'Frage?', category: 'Kategorie A', answers, phase: 'intro' },
+		})
+
+		expect(wrapper.text()).toContain('Frage?')
+		answers.forEach((answer) => expect(wrapper.text()).not.toContain(answer.text))
+	})
+
 	it('shows the question text and all answers without revealing which is correct', () => {
 		const wrapper = mount(QuestionSlide, {
-			props: { text: 'Frage?', answers, resolved: false },
+			props: { text: 'Frage?', category: 'Kategorie A', answers, phase: 'answers' },
 		})
 
 		expect(wrapper.text()).toContain('Frage?')
@@ -23,7 +32,7 @@ describe('QuestionSlide', () => {
 
 	it('marks correct answers green and incorrect answers grey when resolved', () => {
 		const wrapper = mount(QuestionSlide, {
-			props: { text: 'Frage?', answers, resolved: true },
+			props: { text: 'Frage?', category: 'Kategorie A', answers, phase: 'resolved' },
 		})
 
 		const items = wrapper.findAll('li')

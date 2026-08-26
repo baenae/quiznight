@@ -3,10 +3,10 @@ import { defineComponent, h } from 'vue'
 import { mount } from '@vue/test-utils'
 import { useQuizKeyboard } from './useQuizKeyboard'
 
-function mountWithKeyboard(onNext: () => void, onPrev: () => void) {
+function mountWithKeyboard(onNext: () => void, onPrev: () => void, onToggleOverview: () => void = () => {}) {
 	const TestComponent = defineComponent({
 		setup() {
-			useQuizKeyboard(onNext, onPrev)
+			useQuizKeyboard(onNext, onPrev, onToggleOverview)
 			return () => h('div')
 		},
 	})
@@ -40,6 +40,37 @@ describe('useQuizKeyboard', () => {
 
 		expect(onPrev).toHaveBeenCalledOnce()
 		expect(event.defaultPrevented).toBe(true)
+	})
+
+	it('calls onNext when ArrowRight is pressed and prevents the default scroll', () => {
+		const onNext = vi.fn()
+		const onPrev = vi.fn()
+		mountWithKeyboard(onNext, onPrev)
+
+		const event = pressKey('ArrowRight')
+
+		expect(onNext).toHaveBeenCalledOnce()
+		expect(event.defaultPrevented).toBe(true)
+	})
+
+	it('calls onPrev when ArrowLeft is pressed and prevents the default scroll', () => {
+		const onNext = vi.fn()
+		const onPrev = vi.fn()
+		mountWithKeyboard(onNext, onPrev)
+
+		const event = pressKey('ArrowLeft')
+
+		expect(onPrev).toHaveBeenCalledOnce()
+		expect(event.defaultPrevented).toBe(true)
+	})
+
+	it('calls onToggleOverview when w is pressed', () => {
+		const onToggleOverview = vi.fn()
+		mountWithKeyboard(vi.fn(), vi.fn(), onToggleOverview)
+
+		pressKey('w')
+
+		expect(onToggleOverview).toHaveBeenCalledOnce()
 	})
 
 	it('ignores other keys', () => {

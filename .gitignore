@@ -37,3 +37,6 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# LEMON MILK font (donationware, not licensed for redistribution — see README)
+src/assets/font/

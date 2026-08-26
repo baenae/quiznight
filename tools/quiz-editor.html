@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Quiz-JSON-Editor</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+  #form-panel, #json-panel {
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  #form-panel { border-right: 1px solid #ccc; }
+  #json-panel { background: #f7f7f7; }
+  input[type="text"] { width: 100%; padding: 0.25rem; }
+  #json-output { white-space: pre-wrap; word-break: break-word; }
+</style>
+</head>
+<body>
+  <div id="form-panel">
+    <h1>Quiz-Editor</h1>
+    <label>
+      Titel<br>
+      <input type="text" id="title-input">
+    </label>
+    <div id="categories-container"></div>
+  </div>
+  <div id="json-panel">
+    <pre id="json-output"></pre>
+  </div>
+
+<script>
+  let quiz = { title: '', categories: [] };
+
+  function renderJSON() {
+    document.getElementById('json-output').textContent = JSON.stringify(quiz, null, 2);
+  }
+
+  function renderForm() {
+    document.getElementById('title-input').value = quiz.title;
+  }
+
+  document.getElementById('title-input').oninput = (e) => {
+    quiz.title = e.target.value;
+    renderJSON();
+  };
+
+  function render() {
+    renderForm();
+    renderJSON();
+  }
+
+  render();
+</script>
+</body>
+</html>

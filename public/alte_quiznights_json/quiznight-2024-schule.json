@@ -1,0 +1,335 @@
+{
+  "title": "QuizNight 2024 Schule",
+  "categories": [
+    {
+      "name": "Mathe",
+      "questions": [
+        {
+          "text": "Was ist 10.000 x 1 x 0",
+          "answers": [
+            {
+              "text": "0",
+              "correct": true
+            },
+            {
+              "text": "10000",
+              "correct": false
+            },
+            {
+              "text": "1",
+              "correct": false
+            },
+            {
+              "text": "100",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was ist das Ergebnis von 20 + 5 * 4",
+          "answers": [
+            {
+              "text": "100",
+              "correct": false
+            },
+            {
+              "text": "20",
+              "correct": false
+            },
+            {
+              "text": "40",
+              "correct": true
+            },
+            {
+              "text": "29",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was ist 2/8 + 6/8",
+          "answers": [
+            {
+              "text": "8/16",
+              "correct": false
+            },
+            {
+              "text": "16.8.",
+              "correct": false
+            },
+            {
+              "text": "1",
+              "correct": true
+            },
+            {
+              "text": "Ich konnte Mathe noch nie",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Welche Zahl ist größer als -1?",
+          "answers": [
+            {
+              "text": "1",
+              "correct": true
+            },
+            {
+              "text": "-1.1",
+              "correct": false
+            },
+            {
+              "text": "-10000",
+              "correct": false
+            },
+            {
+              "text": "-100",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was ist 25,5356...",
+          "answers": [
+            {
+              "text": "PI",
+              "correct": false
+            },
+            {
+              "text": "Die Wurzel des Bösen",
+              "correct": true
+            },
+            {
+              "text": "Newtonsche Gravitationskonstante",
+              "correct": false
+            },
+            {
+              "text": "Boltzmann-Konstante",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physik",
+      "questions": [
+        {
+          "text": "WER ODER WAS BIN ICH?",
+          "answers": [
+            {
+              "text": "Radioaktivität",
+              "correct": false
+            },
+            {
+              "text": "Pluto",
+              "correct": true
+            },
+            {
+              "text": "Caesium",
+              "correct": false
+            },
+            {
+              "text": "Olympus Mons",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Was gehört NICHT dazu?",
+          "answers": [
+            {
+              "text": "Pluto",
+              "correct": false
+            },
+            {
+              "text": "Makemake",
+              "correct": false
+            },
+            {
+              "text": "Eris",
+              "correct": false
+            },
+            {
+              "text": "Balin",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Was beschreibt Schrödingers Katze?",
+          "answers": [
+            {
+              "text": "Zwillingsparadoxon",
+              "correct": false
+            },
+            {
+              "text": "Radioaktivität",
+              "correct": false
+            },
+            {
+              "text": "Superposition",
+              "correct": true
+            },
+            {
+              "text": "Lichtgeschwindigkeit",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "In was wird die Elektrische Stromstärke angegeben?",
+          "answers": [
+            {
+              "text": "Ohm",
+              "correct": false
+            },
+            {
+              "text": "Watt",
+              "correct": false
+            },
+            {
+              "text": "Volt",
+              "correct": false
+            },
+            {
+              "text": "Ampere",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "WAS BIN ICH?",
+          "answers": [
+            {
+              "text": "Sonnensystem",
+              "correct": false
+            },
+            {
+              "text": "Schwarzes Loch",
+              "correct": true
+            },
+            {
+              "text": "dunkle Materie",
+              "correct": false
+            },
+            {
+              "text": "Wurmloch",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Musik",
+      "questions": [
+        {
+          "text": "Lied 1 Freddy Quinn",
+          "answers": [
+            {
+              "text": "Hamburger Veermaster",
+              "correct": false
+            },
+            {
+              "text": "Rolling Home",
+              "correct": true
+            },
+            {
+              "text": "What Shall we do with the drunken Sailor",
+              "correct": false
+            },
+            {
+              "text": "Wellerman",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Lied 2 Beatles",
+          "answers": [
+            {
+              "text": "Hey Jude",
+              "correct": true
+            },
+            {
+              "text": "Happinies is a warm gun",
+              "correct": false
+            },
+            {
+              "text": "Help!",
+              "correct": false
+            },
+            {
+              "text": "Let it be",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Lied 3 Queen",
+          "answers": [
+            {
+              "text": "Mama Mia",
+              "correct": false
+            },
+            {
+              "text": "We are the Champions",
+              "correct": false
+            },
+            {
+              "text": "Killer Queen",
+              "correct": false
+            },
+            {
+              "text": "Somebody to Love",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "text": "Lied 4 Wie heist dieses Lied? Übringends  von Johann Friedrich Anton Fleischmann, nicht Mozart",
+          "answers": [
+            {
+              "text": "Die Blümelein sie schlafen",
+              "correct": false
+            },
+            {
+              "text": "Der Mond ist aufgegangen",
+              "correct": false
+            },
+            {
+              "text": "Schlafe mein Prinzchen",
+              "correct": true
+            },
+            {
+              "text": "Kein schöner Land",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "text": "Wer hat das Lied gecovered?",
+          "answers": [
+            {
+              "text": "Marc Oh!",
+              "correct": false
+            },
+            {
+              "text": "Marusha",
+              "correct": false
+            },
+            {
+              "text": "Westbam",
+              "correct": false
+            },
+            {
+              "text": "Charly Lownoise und Methal Theo",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
